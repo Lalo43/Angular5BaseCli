@@ -1,0 +1,19 @@
+.card{
+    border: 1px solid black;
+    width: 320px;
+}
+
+
+.horizontal-container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container-space{
+    justify-content: space-between;
+}
+
+.data-container{
+    margin: 10px;
+}
