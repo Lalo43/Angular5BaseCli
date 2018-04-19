@@ -9,14 +9,14 @@ import { GitHubModel } from "../model/git-hub-model";
 })
 export class GitHubCardComponent implements OnInit, OnDestroy {
    
-    gitHubdata: GitHubModel;
+    gitHubData: GitHubModel;
     constructor(){
-        this.gitHubdata = new GitHubModel();
-        this.gitHubdata.avatar_url = 'https://png.icons8.com/windows/1600/cat-profile.png'
-        this.gitHubdata.follower;
-        this.gitHubdata.following;
-        this.gitHubdata.login;
-        this.gitHubdata.name;
+        this.gitHubData = new GitHubModel();
+        this.gitHubData.avatar_url = 'https://png.icons8.com/windows/1600/cat-profile.png'
+        this.gitHubData.follower = 1;
+        this.gitHubData.following = 1;
+        this.gitHubData.login = "Lalo43";
+        this.gitHubData.name = "David ERB";
     }
     ngOnInit(){        
     }
