@@ -6,15 +6,13 @@
 
 .horizontal-container{
     display: flex;
-    flex-direction: row;
-    
-}
-
-.container-space{
-    justify-content: space-between;
-    
+    flex-direction: row;    
 }
 
 .data-container{
     margin: 10px;
 }
+.container-space{    
+    justify-content: space-between;
+}
+

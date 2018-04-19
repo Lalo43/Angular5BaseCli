@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { GitHubService } from '../services/git-hub.service';
+import { GitHubModel } from '../model/git-hub-model';
+//import { SearchUserComponent } from "../search-user/search-user.component";
 
 @Component({
   selector: 'app-main',
@@ -6,10 +9,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-
-  constructor() { }
-
+  
+  gitHubDataList: Array<GitHubModel>;
+  constructor(private _gitHubService: GitHubService) {
+     this.gitHubDataList = new Array<GitHubModel>();
+  }
+ 
   ngOnInit() {
+   
+        
+  }
+
+  onSearchUser(userName: string){
+     this._gitHubService
+        .getUserInfo(userName)
+        .subscribe(x=> {
+          this.gitHubDataList.push(x);
+          });
+  }
+
+  borrarElement(obj: GitHubModel){
+    this.gitHubDataList=this.gitHubDataList.filter(x => x!== obj)
+    
   }
 
 }
