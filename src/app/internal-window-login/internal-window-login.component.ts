@@ -1,7 +1,8 @@
 import { Component, OnInit, OnDestroy} from "@angular/core";
 import { LoginService } from "../services/login.service";
 import { Router } from "@angular/router";
-
+import { MatButtonModule,    
+         MatInputModule} from '@angular/material'
 
 @Component({
     selector: 'app-internal-window-login',

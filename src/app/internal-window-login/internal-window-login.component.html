@@ -1,7 +1,18 @@
 <div>
-    <div class ="vertical-container">
-        <input type="text" placeholder="Ingresar Ususario" [(ngModel)] = "user"/><br>
-        <input type="text" placeholder="Contraseña" [(ngModel)] = "password"/><br>
-        <button class="button" (click) = "loginUsers()"><span>Login</span></button>
+    <h1>WELCOME!</h1>
+    <div>
+        
+        <mat-form-field class="example-full-width">
+                <input matInput placeholder="Usuario" value="Usuario"  [(ngModel)] = "user">
+              </mat-form-field>
+
+              <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Contraseña" value="Contraseña" [(ngModel)] = "password">
+                  </mat-form-field>
+    
+                  <div  class="example-button">
+                     <button mat-button color="primary" (click) = "loginUsers()"><span>Login</span></button>
+        </div>
+      
     </div>
 </div>
