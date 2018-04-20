@@ -1,5 +1,7 @@
 <div class="main-container">
   <h1>Main</h1>
   <app-search-user (onSearchUser)="onSearchUser($event)"></app-search-user>
+ 
   <app-git-hub-card (click)="borrarElement(gitHubData)" *ngFor="let gitHubData of gitHubDataList" [github-data]= "gitHubData"></app-git-hub-card>  
+  <select-overview-example></select-overview-example>
 </div>
