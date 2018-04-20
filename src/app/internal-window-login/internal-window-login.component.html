@@ -1,7 +1,7 @@
 <div>
-    <div>
-        <input type="text" [(ngModel)] = "user"/>
-        <input type="text" [(ngModel)] = "password"/>
-        <button (click) = "loginUsers()">Login</button>
+    <div class ="vertical-container">
+        <input type="text" placeholder="Ingresar Ususario" [(ngModel)] = "user"/><br>
+        <input type="text" placeholder="Contraseña" [(ngModel)] = "password"/><br>
+        <button class="button" (click) = "loginUsers()"><span>Login</span></button>
     </div>
 </div>
