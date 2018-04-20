@@ -1,20 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-
+import { LoginService } from "../services/login.service";
 
 @Component({
   selector: 'app-window-login',
-  templateUrl: './app-window-login.html',
-  styleUrls: ['./app-window-login.css']
+  templateUrl: './window-login.component.html',
+  styleUrls: ['./window-login.component.css']
 })
-export class Windowlogin implements OnInit {
+export class WindowLoginComponent implements OnInit {  
   
-  
-  constructor() {
-    
-  }
- 
-  ngOnInit() {
-   
+   ngOnInit() {
+      
         
   }
 

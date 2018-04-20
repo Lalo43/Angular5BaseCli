@@ -1,7 +1,7 @@
-<div class="vertical-container">
+<div>
     <div>
-        <input type="text"/>
-        <input type="text"/>
-        <button (clic) = "newMain()">Ingresar</button>
+        <input type="text" [(ngModel)] = "user"/>
+        <input type="text" [(ngModel)] = "password"/>
+        <button (click) = "loginUsers()">Login</button>
     </div>
 </div>

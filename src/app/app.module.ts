@@ -22,6 +22,8 @@ import { GitHubCardComponent } from './git-hub-card/git-hub-card.component';
 import { SearchUserComponent } from './search-user/search-user.component';
 import { PasivoComponent } from './pasivo/pasivo.component';
 import { ReactivoComponent } from './reactivo/reactivo.component';
+import { WindowLoginComponent } from './window-login/window-login.component';
+import { InternalWindowLoginComponent } from './internal-window-login/internal-window-login.component';
 
 export const MATERIAL_COMPONENTS = [
   MatToolbarModule,
@@ -30,7 +32,8 @@ export const MATERIAL_COMPONENTS = [
   MatListModule,
   MatIconModule,
   MatInputModule,
-  MatProgressBarModule
+  MatProgressBarModule,
+  
 ]
 
 @NgModule({
@@ -42,7 +45,10 @@ export const MATERIAL_COMPONENTS = [
     GitHubCardComponent,
     SearchUserComponent,
     PasivoComponent,
-    ReactivoComponent
+    ReactivoComponent,
+    WindowLoginComponent,
+    InternalWindowLoginComponent
+    
     
   ],
   imports: [

@@ -3,21 +3,19 @@ import { Subject } from 'rxjs';
 
 @Injectable()
 export class LoginService {
-  private login = new Subject<string>();
-  private password = new Subject<string>();
 
-  constructor() { }
+  userData:string = 'Eduardo';
+  passwordData:string='1043';
 
-  setLogin(){
-      this.login.next("Eduardo");
+  setLogin(user: string, password: string){
+    var validate:boolean;
+
+    if(this.userData===user && this.passwordData===password)
+    {
+     return validate=true;
+    }
   }
 
-  setPassword(){
-    this.password.next("123456");
-}
-
-  getLogin(){
-    return this.login.asObservable();
-  }
+ 
 
 }

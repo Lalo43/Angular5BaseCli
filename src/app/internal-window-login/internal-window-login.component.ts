@@ -1,17 +1,19 @@
-import { Component, OnInit, OnDestroy, Input, Output } from "@angular/core";
+import { Component, OnInit, OnDestroy} from "@angular/core";
 import { LoginService } from "../services/login.service";
 import { Router } from "@angular/router";
 
 
 @Component({
     selector: 'app-internal-window-login',
-    templateUrl: './app-internal-window-login.html',
-    styleUrls: ['./app-internal-window-login.css']
+    templateUrl: './internal-window-login.component.html',
+    styleUrls: ['./internal-window-login.component.css']
 
 })
 export class InternalWindowLoginComponent implements OnInit, OnDestroy {
-    pagina: string;
-    constructor(private _pageRouter: Router){
+    
+    user: string;
+    password: string;
+    constructor(private _loginService: LoginService, private _pageRouter: Router){
         
     }
     ngOnInit(){  
@@ -21,8 +23,12 @@ export class InternalWindowLoginComponent implements OnInit, OnDestroy {
     ngOnDestroy(){        
     }
 
-    newMain(){
-    this._pageRouter.onSameUrlNavigation;   
+    loginUsers(){
+        var inputData=this._loginService.setLogin(this.user,this.password);
+        if (inputData==true)
+        {
+            this._pageRouter.navigate(['']);
+        }   
 
     }
     
