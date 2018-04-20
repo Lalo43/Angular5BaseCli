@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GitHubService } from '../services/git-hub.service';
 import { GitHubModel } from '../model/git-hub-model';
-//import { SearchUserComponent } from "../search-user/search-user.component";
+
 
 @Component({
   selector: 'app-main',

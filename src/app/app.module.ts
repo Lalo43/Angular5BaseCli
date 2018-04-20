@@ -12,7 +12,8 @@ import { MatToolbarModule,
         MatListModule,
         MatIconModule,
         MatInputModule,
-        MatProgressBarModule } from '@angular/material';
+        MatProgressBarModule,
+        MatSelectModule } from '@angular/material';
 
 import { APP_PROVIDERS } from './app.providers';
 import { MainComponent } from './main/main.component';
@@ -24,6 +25,7 @@ import { PasivoComponent } from './pasivo/pasivo.component';
 import { ReactivoComponent } from './reactivo/reactivo.component';
 import { WindowLoginComponent } from './window-login/window-login.component';
 import { InternalWindowLoginComponent } from './internal-window-login/internal-window-login.component';
+import { SelectOverviewExample } from "./main/select.component";
 
 export const MATERIAL_COMPONENTS = [
   MatToolbarModule,
@@ -33,7 +35,7 @@ export const MATERIAL_COMPONENTS = [
   MatIconModule,
   MatInputModule,
   MatProgressBarModule,
-  
+  MatSelectModule
 ]
 
 @NgModule({
@@ -47,7 +49,8 @@ export const MATERIAL_COMPONENTS = [
     PasivoComponent,
     ReactivoComponent,
     WindowLoginComponent,
-    InternalWindowLoginComponent
+    InternalWindowLoginComponent,
+    SelectOverviewExample
     
     
   ],
