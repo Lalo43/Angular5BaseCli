@@ -28,7 +28,7 @@ export class InternalWindowLoginComponent implements OnInit, OnDestroy {
         var inputData=this._loginService.setLogin(this.user,this.password);
         if (inputData==true)
         {
-            this._pageRouter.navigate(['']);
+            this._pageRouter.navigate(['about']);
         }   
 
     }
